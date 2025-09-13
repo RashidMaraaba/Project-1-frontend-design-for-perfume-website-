@@ -1,0 +1,1448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:fit-content;
+     
+}
+
+
+.header{
+    position: fixed; 
+    z-index: 100;
+    width: 100%;
+    height: 50px;
+    /* background-color: rgba(34, 38, 155,0.9); */
+    background-color: rgba(86, 86, 86, 0.9);
+
+    top: 0;
+    left: 0;
+    
+}
+.header a .home-icon{
+    position: absolute;
+    font-size: 30px;
+    color:white; 
+    width: 40px;
+    height: 50px;
+    left: 20px; top: 10px;
+
+}
+
+.search{
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    width: 270px;
+    height: 30px;
+    top: 10px;
+   
+   left: 80px;
+   
+}
+.search input{
+    width: inherit; height: inherit; border-radius: inherit; border: 1px solid blck;
+     
+}
+.search-icon{
+    position: absolute;
+    font-size: 20px;
+    left: 10px; top: 5px;
+}
+
+.lists{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    
+}
+.lists li {
+    position: relative;
+    height: 30px;
+    list-style-type:none;
+    float: left;
+    color: white;
+    margin-right: 30px;
+   margin-top: -18px;
+}
+
+.lists li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.lists li a:hover{
+    color: rgba(19, 21, 148,0.95);
+}
+.lists li a::after{
+    position: absolute;
+    content:" ";
+    width: 0px; 
+    height: 4px;
+    left: 0; bottom: 0;
+    /* background-color: black; */
+    background-color:rgba(19, 21, 148,0.95);
+    opacity: 0;
+}
+.lists  li a:hover::after{
+    width: 100%;
+    transition: 0.8s;
+    opacity: 1;
+    
+}
+.lists2{
+    position: absolute; z-index: 4;
+    background-color: white;
+    width: 170px;
+    height: 150px;
+    top: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+   
+    visibility: hidden;
+
+}
+.lists .li7:hover .lists2{
+    visibility: visible;
+}
+ .lists2 li {
+    position: relative;
+    list-style-type:none;
+   
+    margin-top: 15px;
+   
+   
+}
+.lists2 li a{
+    color: rgb(86, 86, 86);;
+  
+    /* color:   rgba(34, 38, 155,0.9); */
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-bottom: 5px; 
+    text-transform: capitalize;  
+}
+.lists2 li a::after{
+     position: absolute;
+    content:" ";
+    width: 0px; 
+    height: 3px;
+    left: 5px; bottom: 0;
+    background-color:rgba(19, 21, 148,0.95);
+    opacity: 0.5;
+}
+.lists2  li a:hover::after{
+    width: 100%;
+    transition: 0.8s;
+    opacity: 1;
+
+}
+
+/* -----------------------------end section header------------------------------------------ */
+
+.background{
+    background-image: url(../images/backgroung\ land.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.overlay{
+    position: absolute; 
+    z-index: 1;
+    width: 100%; 
+    height: 100%;
+    top: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.home{
+    position: absolute;
+    z-index: 2;
+    width: 60%;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.home-title{
+    font-size: 60px;
+    text-transform: uppercase;
+    word-spacing: 20px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+}
+.p-text{
+    font-size: 25px;
+        color: rgb(230, 220, 220);
+        padding: 10px 0px 15px 0px;
+
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.3;
+    
+}
+.btn2{
+    background-color: blue;
+    color: white;
+}
+/* ----------------------------------end section 1 "background"----------------------------- */
+.welcome h2{
+    margin: 60px auto;
+    width:fit-content;
+    font-size: 45px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    word-spacing: 7px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.line-welcome{
+    background-color:rgba(0, 0, 255,0.7);
+    width: 150px;
+    height: 5px;
+    margin: -45px auto;
+}
+.parent1{
+    position: relative;
+    width: 95%;
+    height: 400px;
+    margin: 60px auto;
+}
+.parent1 .div1{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 25%;
+    height: 70%;
+    border: 1px solid rgba(0, 0, 255,0.7);
+    border-radius: 15px;
+    /* text-align: center; */
+}
+
+ .parent1 .div2{
+    position: absolute;
+    top: 15%;
+    right:37.5% ;
+    width: 25%;
+    height: 70%;
+     border: 1px solid rgba(0, 0, 255,0.7);
+    border-radius: 15px;
+}
+.parent1 .div3{
+    position: absolute;
+    top: 15%;
+    right:5% ;
+    width: 25%;
+    height: 70%;
+     border: 1px solid rgba(0, 0, 255,0.7);
+    border-radius: 15px;
+}
+.parent1 .div .icon{
+    
+    font-size: 35px;
+    /* color: rgb(86, 86, 86); */
+    color: rgba(0, 0, 255,0.8);
+    margin-top: 15%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+
+
+}
+.parent1 .div h3{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+   font-family: Arial, Helvetica, sans-serif;
+   letter-spacing: 0px;
+    /* font-weight: 400; */
+    color: black;
+    padding-top: 10px;
+    text-align: center;
+  
+
+}
+.parent1 .div p{
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(86, 86, 86);
+    text-align:center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 25px;
+}
+.parent1 .div a{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+   text-align: center;
+   text-transform: capitalize;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 35px;
+   color: blue;
+   text-decoration: none;
+
+}
+
+.parent1 .div::after{
+    position: absolute;
+    content: " ";
+    width: 0px;
+    height: 0px;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    opacity: 0;
+    border-radius: 15px;
+    z-index: -1;
+}
+.parent1 .div:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0.3;
+
+}
+.parent1 .div:hover h3{
+    color: rgb(255, 255, 255);
+}
+.parent1 .div:hover p{
+    color: black;
+}
+/* ----------------------------------end section 2 "3-divs"----------------------------- */
+.parent-sec3{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    /* background-color: rgba(128, 128, 128, 0.89); */
+    background-color: #D9D9D9;
+
+    
+}
+.parent-sec3 .title-sec3 h3{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+   font-family: Arial, Helvetica, sans-serif;
+   letter-spacing: 0px;
+   text-align: center;
+   padding-top: 50px;}
+
+.parent-sec3 .line-title-sec3{
+    background-color:rgba(0, 0, 255,0.7);
+    width: 150px;
+    height: 5px;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.parent-sec3 .div11,
+.parent-sec3 .div21{
+    position: absolute;
+    top: 25%; 
+    left: 15%;
+    background-color: red;
+    width:20%;
+    height: 30%;
+    background-image: url(../images/img11.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.parent-sec3 .div21{
+   
+    background-image: url(../images/img21.jpg);
+     top: 60%;
+   
+}
+/* ---------------------------------------- */
+.parent-sec3 .div12 , 
+.parent-sec3 .div22{
+    position: absolute;
+   
+    left: 40%;
+    background-color: red;
+    width:20%;
+    height: 30%;
+    background-image: url(../images/img12.jpg);
+     top: 25%; 
+    background-size: cover;
+    background-position: center;
+
+}
+.parent-sec3 .div22{
+    background-image: url(../images/img22.jpg);
+    top: 60%;
+    }
+/* ---------------------------------------- */
+.parent-sec3 .div13 ,
+.parent-sec3 .div23{
+    position: absolute;
+    top: 25%; 
+    right: 15%;
+    background-color: red;
+    width:20%;
+    height: 30%;
+    background-image: url(../images/img13.webp);
+    background-size: cover;
+    background-position: center;
+}
+.parent-sec3 .div23{
+    background-image: url(../images/img23.jpg);
+     top: 60%;
+}
+/* ---------------------------------------- */
+.parent-sec3 .common .overlay{
+    position: absolute; 
+    z-index: 1;
+    width: 100%; 
+    height: 100%;
+    top: 0; left: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+  
+}
+
+.parent-sec3 .common .p1{
+    position: absolute; z-index: 3;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(163, 162, 162);
+    padding-top: 30px;
+    text-transform: uppercase; 
+    
+}
+
+.parent-sec3 .common .p2{
+     position: absolute; z-index: 3;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+.parent-sec3 .common .a1 .icon1{
+    position: absolute; z-index: 3;
+    background-color: rgba(255, 255, 255,0.85);
+    color: gray;
+    font-size: 40px;
+    right: 35%; 
+    top: 70%;
+    transform: translate(-100%,0);
+    border-radius: 10px;
+}
+
+.parent-sec3 .common .a2 .icon2{
+    position: absolute; z-index: 3;
+    background-color: rgba(255, 255, 255,0.85);
+    color: gray;
+    font-size: 40px;
+    left: 35% ;
+    top: 70%;
+     transform: translate(100%,0);
+     border-radius: 10px;
+}
+
+
+.parent-sec3 .common .overlay,
+.parent-sec3 .common .p1,
+.parent-sec3 .common .p2,
+.parent-sec3 .common .icon1,
+.parent-sec3 .common .icon2 {
+    visibility: hidden;
+}
+.parent-sec3 .common:hover .overlay,
+.parent-sec3 .common:hover .p1,
+.parent-sec3 .common:hover .p2,
+.parent-sec3 .common:hover .icon1,
+.parent-sec3 .common:hover .icon2 {
+    visibility: visible;
+}
+
+/* -------------------------------end section 3 6 pictures-------------------------------- */
+.title-sec4{
+    /* position: absolute; z-index: 5; */
+     font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+   font-family: Arial, Helvetica, sans-serif;
+   letter-spacing: 0px;
+   text-align: center;
+   margin-top: 100px;
+}
+.line-title-sec4{
+     background-color: rgba(0, 0, 255,0.7);
+    width: 150px;
+    height: 5px;
+    margin: auto;
+    margin-top: 10px;
+}
+/* --------------------------------- */
+.parent-sec4{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin-top: -40px;
+}
+.parent-sec4 .div11,
+.parent-sec4 .div21{
+    position: absolute;
+    width: 23%;
+    height: 30%;
+    top: 15%;
+    left: 10%;
+    border: 1px solid rgba(0, 0, 255,0.7);
+    border-radius: 15px;
+    overflow: hidden;
+    
+
+}
+.parent-sec4 .div21{
+    top: 55%;
+}
+.parent-sec4 .div23,
+.parent-sec4 .div13{
+    position: absolute;
+    
+    width: 23%;
+    height: 30%;
+    top: 15%;
+    right: 10%;
+    border: 1px solid rgba(0, 0, 255,0.7);
+    border-radius: 15px;
+
+}
+.parent-sec4 .div23{
+    top: 55%;
+
+}
+.parent-sec4 .div12,
+.parent-sec4 .div22{
+     position: absolute;
+   
+    width: 23%;
+    height: 30%;
+    top: 15%;
+    right: 38.5%;
+    border: 1px solid rgba(0, 0, 255,0.7);
+    border-radius: 15px;
+    
+
+}
+.parent-sec4 .div22{
+    top: 55%;
+}
+
+
+.parent-sec4 .common1 .divicon{
+    
+    top: 0; left: 0; right: 0;
+    width: 15%;
+    height: 100%;
+   
+}
+.parent-sec4 .common1 .divicon a i{
+    color: rgba(0, 0, 255,0.8);
+
+    font-size: 40px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.parent-sec4 .common1 .p1{
+    position: absolute;z-index: 4;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 17%;
+    font-size: 27px;
+    padding-left: 10px;
+    padding-top: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:capitalize ;
+    
+}
+.parent-sec4 .common1 .p2{
+    font-size: 17px;
+     position: absolute;z-index: 4;
+     right: 0;
+    bottom: 0;
+    left: 19.5%;
+    top: 60%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(86, 86, 86);
+    
+
+}
+
+.parent-sec4 .common1::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+   background-color: blue;
+    opacity: 0;
+    border-radius: 15px;
+    /* z-index: -1; */
+}
+.parent-sec4 .common1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 0.5s;
+}
+.parent-sec4 .common1:hover .p2{
+    color: black;
+}
+.parent-sec4 .common1:hover .p1{
+   color: rgba(0, 0, 255,0.8);
+}
+
+/* -------------------------end sec4-6 divs --------------------------------------------------*/
+
+
+.parent-sec5{
+   
+    position: relative;
+    width: 80%; 
+    height: 600px;
+    margin: auto;
+    margin-top: 70px;
+}
+.parent-sec5 .title-sec5{
+    position: absolute; 
+    top: 10%;
+    left: 4%;
+    
+    width: fit-content;
+    height: fit-content;
+   
+
+}
+.parent-sec5 .title-sec5 p{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-transform: capitalize;
+}
+.parent-sec5 .line-sec5 {
+    position: absolute;
+      background-color: rgba(0, 0, 255,0.7);
+    width: 90px;
+    height: 5px;
+    top: 19%;
+    left: 4%;
+
+}
+.parent-sec5 .text-sec5 {
+    position: absolute;
+   
+    left: 4%;
+    top: 25%;
+    
+    width: 50%;
+    height: 15%;
+}
+.parent-sec5 .text-sec5 p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(86, 86, 86, 0.756);
+}
+
+.parent-sec5 .lists{
+    position: absolute;
+    overflow: auto;
+    left: 4%;
+    top: 40%;
+    
+    width: 50%;
+    
+}
+.parent-sec5 .lists .features{
+    list-style-type: none;
+    
+    
+}
+.parent-sec5 .lists .features li{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+   
+     color: rgb(86, 86, 86);
+
+
+}
+.parent-sec5 .lists .features li i{
+      color: rgba(0, 0, 255,0.8);
+     margin-right: -8px;
+     
+
+}
+.parent-sec5 .pic-sec5{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    background-color: aqua;
+    background-image: url(../images/sec5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.parent-sec5 .indicators{
+    position: absolute;
+    width: 30%;
+    height: 5%;
+    right: 2%;
+    top: 83%;
+    text-align: center;
+    margin-top: 10px;
+}
+.parent-sec5 .indicators .dot {
+  display: inline-block;
+
+  padding-top: 6px;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.parent-sec5 .indicators .dot1{
+    background-color: rgba(0, 0, 255,0.8);
+}
+.parent-sec5 .indicators .dot2:hover,
+.parent-sec5 .indicators .dot3:hover{
+    background-color: rgba(0, 0, 255,0.8);
+
+}
+/* --------------------end sec5 - picture+features -------------------------------------------- */
+
+
+.parent-sec6{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 55, 0);
+    background-image: url(../images/scroll1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.parent-sec6 .overlay{
+    position: absolute; 
+    z-index: 1;
+    width: 100%; 
+    height: 100%;
+    top: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.parent-sec6 .div1{
+    position: absolute;
+    top: 30%;
+    width: 10%;
+    height: 40%;
+    left: 15%;
+    
+
+}
+
+.parent-sec6 .div1 i,
+.parent-sec6 .div2 i,
+.parent-sec6 .div3 i,
+.parent-sec6 .div4 i{
+    font-size: 40px;
+    margin-left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%,0);
+    color: rgba(0, 0, 255,0.8);
+}
+.parent-sec6 .div1 p,
+.parent-sec6 .div2 p,
+.parent-sec6 .div3 p,
+.parent-sec6 .div4 p{
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    color: white;
+}
+.parent-sec6 .div1 .p1,
+.parent-sec6 .div2 .p1,
+.parent-sec6 .div3 .p1,
+.parent-sec6 .div4 .p1{
+    padding-top: 20px;
+    font-size: 27px;
+    
+}
+.parent-sec6 .div1 .p2,
+.parent-sec6 .div2 .p2,
+.parent-sec6 .div3 .p2,
+.parent-sec6 .div4 .p2{
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.parent-sec6 .div2{
+    position: absolute;
+    top: 30%;
+    width: 10%;
+    height: 40%;
+    left: 35%;
+   
+
+}
+.parent-sec6 .div3{
+    position: absolute;
+    top: 30%;
+    width: 10%;
+    height: 40%;
+    left: 55%;
+    
+}
+.parent-sec6 .div4{
+    position: absolute;
+    top: 30%;
+    width: 10.5%;
+    height: 40%;
+    left: 75%;
+    
+}
+/* -------------------end sec6 -scroll 1  ---------------------------------------------*/
+
+.parent-sec7{
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    height: 700px;
+
+}
+
+.parent-sec7 .title{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+
+   
+}
+.parent-sec7 .title p{
+    font-size: 40px;
+    font-weight: bold;
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.parent-sec7 .line-title{
+    position: absolute;
+    background-color: rgba(0, 0, 255,0.7);
+    width: 90px;
+    height: 5px;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.parent-sec7 .common{
+    position: absolute;
+    height: 65%;
+    width: 22%;
+    top:20% ;
+    left: 10%;
+     border: 1px solid rgba(0, 0, 255,0.7);
+    border-radius: 15px;
+}
+.parent-sec7 .div2{
+     left: 50%;
+    transform: translate(-50%,0);
+     
+
+}
+.parent-sec7 .div3{
+    left: auto;
+    right:10% ;
+
+}
+
+.parent-sec7 .common .perfume-name{
+    font-size: 21px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+.parent-sec7 .common .circle{
+    width: 130px;
+    height: 130px;
+    border: 3px solid rgba(0, 0, 255,0.7);
+    border-radius: 50%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.parent-sec7 .common .circle p{
+    font-weight: 600;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+    
+}
+.parent-sec7 .common .circle .p1{
+     font-size: 35px;
+     padding-top: 10px;
+}
+.parent-sec7 .common .circle .p2{
+     font-size: 25px;
+     
+     
+}
+
+.parent-sec7 .texts{
+    height: 30%;
+    width: 80%;
+    text-align: center;
+    /* margin-top: 20px; */
+    margin: 20px auto;
+}
+.parent-sec7 .texts p{
+    font-size: 18px;
+    font-weight: bold;
+     font-family:Arial, Helvetica, sans-serif;
+     padding-top: 20px;
+     text-transform: capitalize;
+}
+.parent-sec7 .btn{
+    position: absolute;z-index: 3;
+    width: 55%;
+    height: 30px;
+    margin-left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%,0);
+    text-transform: capitalize;
+     border: 2px solid rgba(0, 0, 255,0.7);
+}
+.parent-sec7 .btn:hover{
+    cursor:pointer;
+}
+.parent-sec7 .common::after{
+     content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+   background-color: blue;
+    opacity: 0;
+    border-radius: 15px;
+    z-index: -1;
+}
+.parent-sec7 .common:hover::after{
+    height: 100%;
+    opacity: 0.3;
+    transition: 0.8s;
+}
+.parent-sec7 .common:hover .circle{
+    border: 3px solid rgba(0, 0, 255,0.9);
+}
+.parent-sec7 .common:hover .perfume-name{
+    color: rgba(0, 0, 255,0.99);
+}
+/* ---------------------end section7 pricing table----------------------------------------- */
+
+.parent-sec8{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* background-color: rgb(255, 55, 0); */
+    background-image: url(../images/nnnnn.jpeg);
+    background-size: cover;
+    /* background-position: right; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 100px;
+
+}
+.parent-sec8 .overlay{
+    position: absolute; 
+    z-index: 1;
+    width: 100%; 
+    height: 100%;
+    top: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.parent-sec8 .semi-parent{
+    position: absolute;
+    /* border: 5px solid red; */
+    width: 80%;
+    top: 10%;
+    left: 10% ;
+    right: 10%;
+    height: 80%;
+}
+.parent-sec8 .semi-parent .div1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    /* border: 5px solid rgb(43, 0, 255); */
+
+}
+.parent-sec8 .semi-parent .common .img{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-image: url(../images/man2.jpeg);
+    background-size: cover;
+    
+}
+.parent-sec8 .semi-parent .common p{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.parent-sec8 .semi-parent .common .p1{
+     margin: 12% 0px 0px 40%;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.888);
+
+}
+
+.parent-sec8 .semi-parent .common .p2{
+     margin: 1% 0px 0px 40%;
+     font-size: 30px;
+      /* color: #d4af37; */
+      color: rgb(0, 0, 255);
+
+}
+.parent-sec8 .semi-parent .common .p3{
+    color: rgb(192, 192, 192);
+    font-size: 22px;
+    margin: 12% 0px 0px 10%;
+
+
+}
+.parent-sec8 .semi-parent .div2{
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    /* border: 5px solid rgb(38, 255, 0); */
+
+}
+.parent-sec8 .semi-parent .div2 .img2{
+    background-image: url(../images/woman1.jpeg);
+    background-size: cover;
+
+}
+/* --------------------------------end sec8 team section ------------------------------------- */
+.title-sec9 p{
+    font-size: 43px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top:150px ;
+   text-align: center;
+       font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.line-title-sec9{
+   margin: auto;
+    background-color: rgba(0, 0, 255,0.7);
+    width: 90px;
+    height: 5px;
+    margin-top: 10px;
+
+}
+.parent-sec9 {
+    margin-top: 40px;
+    position: relative;
+   
+    width: 100%;
+    height: 500px;
+}
+.parent-sec9 .common{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: rgba(86, 86, 86, 0.5);
+    height: 80%;
+    width: 22%;
+    border-radius: 15px;
+}
+.parent-sec9 .div2{
+    left: 39%;
+}
+.parent-sec9 .div3{
+     left: 68%;
+
+}
+.parent-sec9 .common .common1{
+    position: absolute;
+    width: 80%;
+    height: 65%;
+    top: 5%;
+    left: 10%;
+}
+.parent-sec9 .common p{
+    position: absolute;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 17px;
+   
+}
+.parent-sec9 .common .p1{
+    top: 72%;
+    font-size: 30px;
+    text-transform: capitalize;
+     left: 50%;
+    transform: translate(-50%,0);
+    
+}
+
+.parent-sec9 .div1 .p2,
+.parent-sec9 .div3 .p2{
+    top: 80%;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform:uppercase;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding-top: 40px;
+    color: rgb(66, 66, 66);
+    
+}
+.parent-sec9 .div2 .p2{
+    top: 80%;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform:uppercase;
+   margin: auto;
+   left: 16%;
+   padding-top: 40px;
+   color: rgb(66, 66, 66);
+    
+}
+.parent-sec9 .common .common1{
+background-position: center;
+    background-size: cover;
+}
+.parent-sec9 .div1 .div11{
+    background-image: url(../images/card1.jpeg);
+}
+.parent-sec9 .div2 .div22{
+    background-image: url(../images/card2.jpeg);
+}
+.parent-sec9 .div3 .div33{
+    background-image: url(../images/card3.jpeg);
+}
+.parent-sec9 .common .common1 i{
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0, 0, 255,0.6);
+    color: white;
+    display: block;
+    padding-top: 10px;
+    margin-left: auto;
+    visibility: hidden;
+    text-align: center;
+}
+.parent-sec9 .common .common1 .i2,
+.parent-sec9 .common .common1 .i3{
+    padding-top: 15px;
+
+}
+.parent-sec9 .common::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: blue;
+    opacity: 0;
+    border-radius: 15px;
+}
+.parent-sec9 .common:hover::after{
+    height: 100%;
+    opacity: 0.3;
+    transition: 0.6s;
+
+}
+.parent-sec9 .common:hover .common1 i{
+    visibility: visible;
+}
+.parent-sec9 .common:hover .p1{
+    color: white;
+}
+.parent-sec9 .common:hover .p2{
+    color: rgba(0, 0, 255,0.7);
+}
+
+/* ---------------------------end sec9  3div-ourteam--------------------------------------------- */
+
+.title-sec10 p{
+    font-size: 43px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top:150px ;
+   text-align: center;
+       font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.line-title-sec10{
+   margin: auto;
+    background-color: rgba(0, 0, 255,0.7);
+    width: 90px;
+    height: 5px;
+    margin-top: 10px;
+
+}
+.parent-sec10{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-top: 40px;
+}
+.parent-sec10 .common{
+    position: absolute;
+    width: 25%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 15px;
+    top:10% ;
+    left: 8%;
+}
+.parent-sec10 .div2{
+    left: 37.5%;
+}
+.parent-sec10 .div3{
+    left: 67%;
+}
+.parent-sec10 .common1{
+    position: absolute; z-index: 4;
+    border-radius: 15px;
+    top: 5%;
+    left: 12.5%;
+    width: 75%;
+    height: 50%;
+}
+.parent-sec10 .common .under-img{
+    position: absolute;
+    width: 75%;
+    height: 20px;
+    top: 60%;
+    left: 12.5%;
+    text-align: center;
+}
+
+.parent-sec10 .common .under-img span{
+   margin: 0px 8px; 
+   font-size: 17px;
+   font-weight: bold;
+   text-transform: capitalize;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.parent-sec10 .common .under-img span a i{
+    font-size: 20px;
+    color: rgba(0, 0, 255,0.8);
+}
+.parent-sec10 .common .job-name {
+    position: absolute;
+    width: 100%;
+    top: 68%;
+    text-align: center;
+      font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+      font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.parent-sec10 .common .text{
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 8px;
+    top: 77%;
+     font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: fit-content;
+    text-align: center;
+     color: rgb(86, 86, 86);
+}
+.parent-sec10 .common .div11{
+    background-image: url(../images/pic1.jpeg);
+}
+.parent-sec10 .common .div33{
+    background-image: url(../images/pic3.jpeg);
+}
+.parent-sec10 .common .div22{
+    background-image: url(../images/pic2.jpeg);
+}
+.parent-sec10 .common .common1{
+        background-size: cover;
+}
+.parent-sec10 .common  .more a{
+    width: 100%;
+    text-align: center;
+    top: 95%;
+    position: absolute;
+    text-decoration: none;
+    font-size: 18px;
+   font-weight: bold;
+   text-transform: capitalize;
+   font-family: Arial, Helvetica, sans-serif;
+ 
+
+}
+.parent-sec10 .common::after{
+    content: " ";
+    position: absolute;
+     top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: blue;
+    opacity: 0;
+    border-radius: 15px;
+    z-index: -1;
+    
+
+}
+.parent-sec10 .common:hover::after{
+    height: 100%;
+    opacity: 0.3;
+    transition: 0.6s;
+
+}
+.parent-sec10 .common:hover .job-name{
+    color: white;
+    
+}
+.parent-sec10 .common:hover .text,
+.parent-sec10 .common:hover .under-img span{
+    color: rgb(3, 3, 138);
+}
+/* -----------------------------end sec 10------------------------------------------------ */
+.end{
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    height: 350px;
+    background-color: #D9D9D9;
+}
+.end .div1{
+    position: absolute;
+    width: 320px;
+    height: 50%;
+   background-image: url(../images/end.jpeg);
+   background-size: cover;
+   background-position: center;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-radius: 15px;
+
+}
+.end .container{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 65%;
+    left: 50%;
+     transform: translate(-50%,0);
+    /* background-color: #d4af37; */
+    text-align: center;
+}
+.end .container a i{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255,0.55);
+    text-align: center;
+    line-height: 60px;
+    font-size: 40px;
+    color: white;
+}
+.end .endline{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,0);
+    /* background-color: #d4af37; */
+    width: fit-content;
+    height: fit-content;
+}
+.end .endline{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgb(86, 86, 86);
+}
+.end .container a i:hover{
+    background-color: rgba(0, 0, 255,0.9) ;
+}
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
